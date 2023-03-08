@@ -6,7 +6,8 @@
       <br />JavaScript Library
     </h1>
     <p class="description">
-      A powerful 2d canvas library that allows minimal rendering and provides diverse shapes
+      A powerful 2d canvas library that allows minimal rendering and provides
+      diverse shapes
     </p>
     <p>(This document is still in development)</p>
     <p class="actions">

@@ -1,8 +1,12 @@
-import { DefaultTheme, defineConfig } from "vitepress"
-import { version } from "../../package.json"
 import mdItContainer from "markdown-it-container"
+import type { DefaultTheme } from "vitepress"
+import { defineConfig } from "vitepress"
+
+import { version } from "../package.json"
 
 export default defineConfig({
+  srcDir: "src",
+
   lang: "en-US",
   title: "fcanvas",
   description:
@@ -30,7 +34,7 @@ export default defineConfig({
         render(tokens, idx) {
           if (tokens[idx].nesting === 1) {
             // opening tag
-            return `<Preview>`
+            return "<Preview>"
           } else {
             // closing tag
             return "</Preview>"
@@ -44,7 +48,7 @@ export default defineConfig({
     algolia: {
       appId: "M60UI411I9",
       apiKey: "71036bc063478de41dbb27d0ef29744c",
-      indexName: "fcanvas-js",
+      indexName: "fcanvas-js"
     },
 
     logo: "/logo.svg",
@@ -57,8 +61,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern:
-        "https://github.com/fcanvas/fcanvas/edit/main/docs/:path",
+      pattern: "https://github.com/fcanvas/fcanvas/edit/main/docs/:path",
       text: "Edit this page on GitHub"
     },
 

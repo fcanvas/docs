@@ -16,14 +16,11 @@
         />
       </div>
     </div>
-  </div> --> <div ref="codeRef" class="language-" :class="{ active: tab === 'code' }">
-        <slot />
-      </div>
-      <iframe
-          v-if="srcdoc"
-          class="preview"
-          :srcdoc="decodeURIComponent(srcdoc)"
-        />
+  </div> -->
+  <div ref="codeRef" class="language-" :class="{ active: tab === 'code' }">
+    <slot />
+  </div>
+  <iframe v-if="srcdoc" class="preview" :srcdoc="decodeURIComponent(srcdoc)" />
 </template>
 
 <script lang="ts" setup>
@@ -70,7 +67,6 @@ ${ts}
 </script>
 
 <style lang="scss" scoped>
-
 button {
   position: relative;
   display: inline-block;
@@ -86,14 +82,13 @@ button {
   cursor: pointer;
   transition: color 0.25s;
 
-  
   &.active {
-  color: var(--vp-code-tab-active-text-color);
-  border-bottom-color: var(--vp-button-brand-border)
-}
-&:hover {
-  color: var(--vp-code-tab-hover-text-color);
-}
+    color: var(--vp-code-tab-active-text-color);
+    border-bottom-color: var(--vp-button-brand-border);
+  }
+  &:hover {
+    color: var(--vp-code-tab-hover-text-color);
+  }
 }
 
 .preview {
