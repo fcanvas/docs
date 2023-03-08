@@ -1,6 +1,6 @@
 {
   "name": "@fcanvas/docs",
-  "version": "1.1.0-rc.34",
+  "version": "1.1.0-rc.34.docs-1",
   "private": true,
   "scripts": {
     "pretit": "prettier src/",
@@ -8,7 +8,7 @@
     "build": "vitepress build",
     "dev": "vitepress dev",
     "lint": "eslint src .vitepress --ext=.ts",
-    "release": "bumpp package.json --commit --push --tag",
+    "release": "tsx scripts/update-ver.ts && bumpp package.json --commit --push --tag",
     "typing": "vue-tsc --noEmit",
     "ci": "pnpm format && pnpm lint --fix && pnpm typing"
   },
@@ -16,6 +16,7 @@
     "@tachibana-shin/eslint-config": "^1.0.7",
     "@types/markdown-it-container": "^2.0.5",
     "@types/node": "^18.14.0",
+    "@types/sync-fetch": "^0.4.0",
     "bumpp": "^8.2.1",
     "cspell": "^6.26.3",
     "eslint": "^8.34.0",
@@ -23,6 +24,7 @@
     "prettier": "^2.8.4",
     "sass": "^1.58.3",
     "sync-fetch": "^0.4.2",
+    "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vitepress": "1.0.0-alpha.49",
     "vitest": "^0.28.5",
