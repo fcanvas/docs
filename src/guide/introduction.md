@@ -2,8 +2,7 @@
 
 ## What is fCanvas?
 
-fCanvas is an HTML5 Canvas JavaScript framework that extends 2d contexts
-by enabling canvas interaction for desktop and mobile apps.
+fCanvas is a powerful 2d canvas library that allows minimal rendering and provides diverse shapes.
 
 fCanvas allows for high performance animations, transitions, button nesting, layering, filtering,
 caching, event handling for desktop and mobile apps, and more.

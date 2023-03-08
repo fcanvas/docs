@@ -2,7 +2,7 @@
 
 ## Polygon
 
-To create a polygon with `Konva`, we can instantiate a [Line](/guide/shapes/Line) object with `closed = true` attribute.
+To create a polygon with `fcanvas`, we can instantiate a [Line](/guide/shapes/Line) object with `closed = true` attribute.
 
 To define the path of the line you should use points property. If you have three points with x and y coordinates you should define points property as: `[x1, y1, x2, y2, x3, y3]`.
 

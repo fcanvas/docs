@@ -50,7 +50,7 @@ interface AnimationFrames {
 :::preview
 
 ```ts
-import { Stage, Layer, Sprite, watch } from "fcanvas"
+import { Stage, Layer, Sprite, watch, loadImage } from "fcanvas"
 
 const stage = new Stage({ height: 300 }).mount("#app")
 const layer = new Layer().addTo(stage)

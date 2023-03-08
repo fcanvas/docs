@@ -2,7 +2,7 @@
 
 To fill a shape with `fcanvas`, we can set the fill property when we instantiate a shape, or we can use the `fill` attrs.
 
-Konva supports colors, patterns, linear gradients, and radial gradients.
+`fCanvas` supports colors, patterns, linear gradients, and radial gradients.
 
 Instructions: Mouseover each pentagon to change its fill. You can also drag and drop the shapes.
 

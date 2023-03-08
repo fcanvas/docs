@@ -28,7 +28,7 @@ We can use the renderer to access the HTML5 Canvas context, and to use special m
 
 There are two properties that can be used for drawing custom shapes: `sceneFunc`.
 
-`sceneFunc` should be used to define visual appearance of a shape. `Konva` will use `sceneFunc` for drawing its hit graph for events detecting. So in many cases you just need to define `sceneFunc` only
+`sceneFunc` should be used to define visual appearance of a shape. `fcanvas` will use `sceneFunc` for drawing its hit graph for events detecting. So in many cases you just need to define `sceneFunc` only
 
 ### Some best practices for writing `sceneFunc`:
 
