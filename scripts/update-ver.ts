@@ -3,7 +3,7 @@ import path from "path"
 
 import fetch from "sync-fetch"
 
-import * as pkg from "../package.json"
+import pkg from "../package.json"
 
 const { version } = fetch(
   "https://raw.githubusercontent.com/fcanvas/fcanvas/main/package.json"
