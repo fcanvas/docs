@@ -1,6 +1,7 @@
 import mdItContainer from "markdown-it-container"
 import type { DefaultTheme } from "vitepress"
 import { defineConfig } from "vitepress"
+
 import { version } from "../package.json"
 
 export default defineConfig({
