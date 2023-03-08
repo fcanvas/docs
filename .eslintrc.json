@@ -1,0 +1,10 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "@tachibana-shin/eslint-config",
+  "rules": {
+    "functional/immutable-data": "off",
+    "no-undef": "off"
+  }
+}
