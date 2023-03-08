@@ -58,12 +58,12 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        "https://github.com/tachibana-shin/fcanvas-next/edit/main/docs/:path",
+        "https://github.com/fcanvas/fcanvas/edit/main/docs/:path",
       text: "Edit this page on GitHub"
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/tachibana-shin/fcanvas-next" }
+      { icon: "github", link: "https://github.com/fcanvas/fcanvas" }
     ],
 
     footer: {
@@ -96,11 +96,11 @@ function nav() {
       items: [
         {
           text: "Release Notes",
-          link: "https://github.com/tachibana-shin/fcanvas-next/releases/"
+          link: "https://github.com/fcanvas/fcanvas/releases/"
         },
         {
           text: "Contributing",
-          link: "https://github.com/tachibana-shin/fcanvas-next/blob/main/.github/contributing.md"
+          link: "https://github.com/fcanvas/fcanvas/blob/main/.github/contributing.md"
         }
       ]
     }
