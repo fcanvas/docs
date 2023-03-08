@@ -1,6 +1,6 @@
 {
   "name": "@fcanvas/docs",
-  "version": "1.1.0-rc.34.docs-3",
+  "version": "1.1.0-rc.35-docs.1",
   "private": true,
   "scripts": {
     "pretit": "prettier src/",
