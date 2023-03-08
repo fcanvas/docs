@@ -46,6 +46,7 @@ In addition, this shape also provides a few other parameters:
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Arrow } from "fcanvas"
 
@@ -55,13 +56,13 @@ const layer = new Layer().addTo(stage)
 const arrow = new Arrow({
   x: stage.size.width / 4,
   y: stage.size.height / 4,
-  points: [0, 0, stage.size.width / 2, stage.size.height /2],
+  points: [0, 0, stage.size.width / 2, stage.size.height / 2],
   pointerLength: 20,
   pointerWidth: 20,
-  fill: 'black',
-  stroke: 'black',
+  fill: "black",
+  stroke: "black",
   strokeWidth: 4
-})
-.addTo(layer)
+}).addTo(layer)
 ```
+
 :::

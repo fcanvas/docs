@@ -10,14 +10,17 @@ Equivalent documents: https://vuejs.org/guide/essentials/watchers.html
 import { watch, Circle } from "fcanvas"
 
 const circle = new Circle({
-   x: 0,
-   y: 0,
-   radius: 10
+  x: 0,
+  y: 0,
+  radius: 10
 })
 
-watch(() => circle.$.x, () => {
-   console.log("x changed")
-})
+watch(
+  () => circle.$.x,
+  () => {
+    console.log("x changed")
+  }
+)
 
 circle.$.x++ // emit console.log("x changed")
 ```

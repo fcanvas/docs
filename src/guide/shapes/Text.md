@@ -47,6 +47,7 @@ In addition, this shape also provides a few other parameters:
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Text, Rect } from "fcanvas"
 
@@ -96,4 +97,5 @@ layer.add(simpleText)
 layer.add(rect)
 layer.add(complexText)
 ```
+
 :::

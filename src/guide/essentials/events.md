@@ -2,22 +2,26 @@
 
 All subject objects inherit DOM primitives like `click`, `mousemove`...
 
-The following objects own this Event API: 
+The following objects own this Event API:
+
 - [Stage](./Stage)
 - [Layer](./Layer)
 - [Group](./Group)
 - [Shape](./Shape)
 - and all shape. Example [Arc](/guide/shapes/Arc), [Rect](/guide/shapes/Rect)...
 
-
 ## on()
+
 Listen to events
+
 ```ts
 on(name: string, cb: (event: Event) => void): void
 ```
 
 ## off()
+
 Remove listen to events
+
 ```ts
 off(name: string, cb?: (event: Event) => void): void
 ```
@@ -25,6 +29,7 @@ off(name: string, cb?: (event: Event) => void): void
 Demo:
 
 :::preview
+
 ```ts
 import { Stage, Layer, Circle } from "fcanvas"
 
@@ -42,5 +47,5 @@ circle.on("click", () => {
   circle.$.fill = "blue"
 })
 ```
-:::
 
+:::

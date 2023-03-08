@@ -1,8 +1,12 @@
+import { execSync } from "child_process"
 import mdItContainer from "markdown-it-container"
 import type { DefaultTheme } from "vitepress"
 import { defineConfig } from "vitepress"
+import fetch from "sync-fetch"
 
-import { version } from "../package.json"
+const { version } = fetch(
+  "https://raw.githubusercontent.com/fcanvas/fcanvas/main/package.json"
+).json()
 
 export default defineConfig({
   srcDir: "src",

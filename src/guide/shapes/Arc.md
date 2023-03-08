@@ -33,6 +33,7 @@ In addition, this shape also provides a few other parameters:
 | clockwise | `MayBeRef<boolean>` | false       | The drawing angle should be clockwise or counterclockwise |
 
 :::preview
+
 ```ts
 import { Stage, Layer, Arc } from "fcanvas"
 
@@ -50,4 +51,5 @@ const arc = new Arc({
   strokeWidth: 4
 }).addTo(layer)
 ```
+
 :::

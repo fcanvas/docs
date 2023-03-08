@@ -29,6 +29,7 @@ In addition, this shape also provides a few other parameters:
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Star } from "fcanvas"
 
@@ -46,4 +47,5 @@ const star = new Star({
   strokeWidth: 4
 }).addTo(layer)
 ```
+
 :::

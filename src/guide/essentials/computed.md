@@ -2,7 +2,6 @@
 
 Equivalent documents: https://vuejs.org/guide/essentials/computed.html
 
-
 `fcanvas` components (`Stage`, `Layer`, `Shape`...) accept setting values ​​as primitives or a return value from react api like `ref `, `reactive`, `computed`...
 
 ```ts

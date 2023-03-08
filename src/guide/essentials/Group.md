@@ -15,6 +15,7 @@ If most of the elements don't change often, create a new [Layer](./Layer) that h
 :::
 
 :::preview
+
 ```ts
 import { Stage, Layer, Group, Circle } from "fcanvas"
 
@@ -26,26 +27,29 @@ const circle = new Circle({ x: 20, y: 20, radius: 20, fill: "red" }).addTo(
   group
 )
 ```
+
 :::
 
-## Sync 
+## Sync
+
 Because `fcanvas` automatically applies drawing reduction strategies, in many cases when there is a change, `Group` will not redraw immediately, but wait until the batch change is complete.
 
 If you want to get the image immediately in the process you have to call `await nextTick()`
 
-However many cases need sync code and not `Promise` pass 
+However many cases need sync code and not `Promise` pass
 
 ```ts
 Group({ sync: true })
 ```
 
- it will sync the drawings real time
+it will sync the drawings real time
 
 ## Position of Shape in Group
 
 Position of shapes will be calculated from position 0 of `Group` for example:
 
 :::preview
+
 ```ts
 import { Stage, Layer, Group, Circle } from "fcanvas"
 
@@ -57,6 +61,7 @@ const circle = new Circle({ x: 10, y: 10, radius: 20, fill: "red" }).addTo(
   group
 )
 ```
+
 :::
 
 now the position of the displayed `circle` will be `{ 100 + 10; 100 + 10 }`

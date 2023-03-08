@@ -19,10 +19,10 @@ const colorPentagon = new RegularPolygon({
   y: stage.size.height / 2,
   sides: 5,
   radius: 70,
-  fill: 'red',
-  stroke: 'black',
-  strokeWidth: 4,
-});
+  fill: "red",
+  stroke: "black",
+  strokeWidth: 4
+})
 
 const patternPentagon = new RegularPolygon({
   x: 220,
@@ -30,11 +30,11 @@ const patternPentagon = new RegularPolygon({
   sides: 5,
   radius: 70,
   fillPattern: {
-    image: await loadImage("https://google.com/favicon.ico"),
+    image: await loadImage("https://google.com/favicon.ico")
   },
-  stroke: 'black',
-  strokeWidth: 4,
-});
+  stroke: "black",
+  strokeWidth: 4
+})
 
 const linearGradPentagon = new RegularPolygon({
   x: 360,
@@ -44,11 +44,14 @@ const linearGradPentagon = new RegularPolygon({
   fillLinearGradient: {
     start: { x: -50, y: -50 },
     end: { x: 50, y: 50 },
-    colorStops: [[0, 'red'], [1, 'yellow']]
+    colorStops: [
+      [0, "red"],
+      [1, "yellow"]
+    ]
   },
-  stroke: 'black',
-  strokeWidth: 4,
-});
+  stroke: "black",
+  strokeWidth: 4
+})
 
 const radialGradPentagon = new RegularPolygon({
   x: 500,
@@ -60,69 +63,79 @@ const radialGradPentagon = new RegularPolygon({
     startRadius: 0,
     end: { x: 0, y: 0 },
     endRadius: 70,
-    colorStops: [[0, 'red'], [0.5, 'yellow'], [1, 'blue']],
+    colorStops: [
+      [0, "red"],
+      [0.5, "yellow"],
+      [1, "blue"]
+    ]
   },
-  stroke: 'black',
-  strokeWidth: 4,
-});
+  stroke: "black",
+  strokeWidth: 4
+})
 
 /*
  * bind listeners
  */
-colorPentagon.on('mouseover touchstart', () => {
-  colorPentagon.$.fill = ('blue');
-});
+colorPentagon.on("mouseover touchstart", () => {
+  colorPentagon.$.fill = "blue"
+})
 
-colorPentagon.on('mouseout touchend', () => {
-  colorPentagon.$.fill = ('red');
-});
+colorPentagon.on("mouseout touchend", () => {
+  colorPentagon.$.fill = "red"
+})
 
-patternPentagon.on('mouseover touchstart', () => {
+patternPentagon.on("mouseover touchstart", () => {
   patternPentagon.$.fillPattern = {
-   image: await loadImage("https://shin.is-a.dev/favicon.ico"),
+    image: await loadImage("https://shin.is-a.dev/favicon.ico")
   }
-});
+})
 
-patternPentagon.on('mouseout touchend', () => {
+patternPentagon.on("mouseout touchend", () => {
   patternPentagon.$.fillPattern = {
-   image: await loadImage("https://google.com/favicon.ico"),
+    image: await loadImage("https://google.com/favicon.ico")
   }
-});
+})
 
-linearGradPentagon.on('mouseover touchstart', () => {
+linearGradPentagon.on("mouseover touchstart", () => {
   patternPentagon.$.fillLinearGradient = {
-   start: { x: -50, y: 0 },
-   end: { x: 50, y: 0 },
-   colorStops: [[0, "green"], [1, "yellow"]]
+    start: { x: -50, y: 0 },
+    end: { x: 50, y: 0 },
+    colorStops: [
+      [0, "green"],
+      [1, "yellow"]
+    ]
   }
-});
+})
 
-linearGradPentagon.on('mouseout touchend', () => {
+linearGradPentagon.on("mouseout touchend", () => {
   patternPentagon.$.fillLinearGradient = {
-   start: { x: -50, y: 0 },
-   end: { x: 50, y: 0 },
-   colorStops: [[0, "red"], [1, "yellow"]]
+    start: { x: -50, y: 0 },
+    end: { x: 50, y: 0 },
+    colorStops: [
+      [0, "red"],
+      [1, "yellow"]
+    ]
   }
-});
+})
 
-radialGradPentagon.on('mouseover touchstart', () => {
+radialGradPentagon.on("mouseover touchstart", () => {
   radialGradPentagon.$.fillRadialGradient.colorStops = [
-    [0, 'red'],
-    [0.5, 'yellow'],
-    [1, 'green']
+    [0, "red"],
+    [0.5, "yellow"],
+    [1, "green"]
   ]
-});
+})
 
-radialGradPentagon.on('mouseout touchend', () => {
+radialGradPentagon.on("mouseout touchend", () => {
   radialGradPentagon.$.fillRadialGradient.colorStops = [
-    [0, 'red'],
-    [0.5, 'yellow'],
-    [1, 'blue']
+    [0, "red"],
+    [0.5, "yellow"],
+    [1, "blue"]
   ]
-});
+})
 
-layer.add(colorPentagon);
-layer.add(patternPentagon);
-layer.add(linearGradPentagon);
-layer.add(radialGradPentagon);
+layer.add(colorPentagon)
+layer.add(patternPentagon)
+layer.add(linearGradPentagon)
+layer.add(radialGradPentagon)
 ```

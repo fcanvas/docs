@@ -17,12 +17,12 @@ To create a text label with `fcanvas`, which can be used for creating text with 
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Ellipse, Label, Tag, Text } from "fcanvas"
 
 const stage = new Stage({ height: 300 }).mount("#app")
 const layer = new Layer().addTo(stage)
-
 
 const tooltip = new Label({
   x: 170,
@@ -107,4 +107,5 @@ layer.add(tooltip)
 layer.add(labelLeft)
 layer.add(simpleLabel)
 ```
+
 :::

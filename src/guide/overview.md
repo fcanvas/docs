@@ -48,6 +48,7 @@ apply filters, and much more.
 Minimal code example:
 
 :::preview
+
 ```ts
 import { Stage, Layer, Circle } from "fcanvas"
 // first we need to create a stage
@@ -78,6 +79,7 @@ stage.add(layer)
 // draw the image, call this if autoDraw=false
 // layer.draw();
 ```
+
 :::
 
 ## Basic shapes
@@ -178,6 +180,7 @@ circle.on("mousemove", () => {
 You can create animations via package `@fcanvas/animate`:
 
 :::preview
+
 ```ts
 import { Stage, Layer, Circle, Shape } from "fcanvas"
 import { installAnimate } from "@fcanvas/animate"
@@ -203,6 +206,7 @@ circle.on("click", () => {
   })
 })
 ```
+
 :::
 
 ## Selectors

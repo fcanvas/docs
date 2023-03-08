@@ -36,6 +36,7 @@ In addition, this shape also provides a few other parameters:
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Rect } from "fcanvas"
 
@@ -69,4 +70,5 @@ const rect3 = new Rect({
   cornerRadius: [0, 10, 20, 30]
 }).addTo(layer)
 ```
+
 :::

@@ -38,6 +38,7 @@ The `rotate` mentioned above is different from the `rotation` property that inhe
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Ellipse } from "fcanvas"
 
@@ -54,4 +55,5 @@ const ellipse = new Ellipse({
   strokeWidth: 4
 }).addTo(layer)
 ```
+
 :::

@@ -33,6 +33,7 @@ You can generate data svg with this tool GUI: https://boxy-svg.com/app
 ## Demo
 
 :::preview
+
 ```ts
 import { Stage, Layer, Path } from "fcanvas"
 
@@ -48,4 +49,5 @@ const path = new Path({
   scaleY: 0.5
 }).addTo(layer)
 ```
+
 :::

@@ -36,6 +36,7 @@ console.log(await put(port2, "hello world", "Shin")) // "run done"
 ### With `WebWorker`
 
 ::: code-group
+
 ```ts [worker.ts]
 import { listen } from "@fcanvas/communicate"
 
@@ -54,6 +55,7 @@ const worker = new Worker()
 
 console.log(await put(worker, "hello world", "Shin")) // "run done"
 ```
+
 :::
 
 ## 2-way use
@@ -61,6 +63,7 @@ console.log(await put(worker, "hello world", "Shin")) // "run done"
 You can use both ways set `listen` to `Worker` or `Threat`
 
 ::: code-group
+
 ```ts [worker.ts]
 import { listen } from "@fcanvas/communicate"
 
@@ -84,6 +87,7 @@ listen(worker, "get input", () => {
 
 console.log(await put(worker, "hello world", "Shin")) // "run done"
 ```
+
 :::
 
 ## Docs
@@ -105,11 +109,11 @@ function listen(
 ): StopListen /** @type () => void */
 ```
 
-| Name    | Type               | Description                                                                                                                           |
-| ------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| port    | LikeMessagePort    | Current port to listen and process. Example `self` in `worker`                                                                        |
-| name    | string             | The name of the listen                                                                                                                |
-| cb      | Function           | Its handler function takes a sequence of `arguments` passed from `put` or `pit` and returns a result either a `config` or a `Promise` |
+| Name    | Type                 | Description                                                                                                                           |
+| ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| port    | LikeMessagePort      | Current port to listen and process. Example `self` in `worker`                                                                        |
+| name    | string               | The name of the listen                                                                                                                |
+| cb      | Function             | Its handler function takes a sequence of `arguments` passed from `put` or `pit` and returns a result either a `config` or a `Promise` |
 | options | `{ once?: boolean }` | if `once: true` is enabled the listener will self-destruct after being called once by `put` or `pit`                                  |
 
 > `cb` normally returns primitive values ​​but if it returns a value that needs `transfer` like `Offscreen` or `ArrayBuffer` return an `Options`
