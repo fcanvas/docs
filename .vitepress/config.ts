@@ -221,6 +221,16 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: pluginItems()
     },
     {
+      text: "Use APIs",
+      collapsed: false,
+      items: [
+        { text: "useIntervalFn", link: "/guide/useApi/useIntervalFn" },
+        { text: "useLoop", link: "/guide/useApi/useLoop" },
+        { text: "useMousePos", link: "/guide/useApi/useMousePos" },
+        { text: "useMousePressed", link: "/guide/useApi/useMousePressed" },
+      ]
+    },
+    {
       text: "Extra Topics",
       collapsed: false,
       items: [{ text: "Performance", link: "/guide/extra-topics/performance" }]
