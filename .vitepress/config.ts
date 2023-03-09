@@ -2,7 +2,9 @@ import mdItContainer from "markdown-it-container"
 import type { DefaultTheme } from "vitepress"
 import { defineConfig } from "vitepress"
 
-import { version } from "../package.json"
+import { version as vDoc } from "../package.json"
+
+const version = vDoc.slice(0, vDoc.indexOf("-docs") >>> 0)
 
 export default defineConfig({
   srcDir: "src",
