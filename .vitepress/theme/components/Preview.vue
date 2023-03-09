@@ -25,7 +25,9 @@
 
 <script lang="ts" setup>
 import { ref, computed } from "vue"
-import { version } from "../../../package.json"
+import { version as vDoc } from "../../../package.json"
+
+const version = vDoc.slice(0, vDoc.indexOf("-docs") >>> 0)
 
 const tab = ref<"code" | "prev">("code")
 
