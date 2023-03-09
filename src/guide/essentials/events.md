@@ -26,7 +26,7 @@ Remove listen to events
 off(name: string, cb?: (event: Event) => void): void
 ```
 
-Demo:
+## Demo:
 
 :::preview
 
