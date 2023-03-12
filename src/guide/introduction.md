@@ -14,7 +14,7 @@ high performance animation, even if your application uses thousands of shapes.
 This project is an attempt at rewriting [KonvaJS](https://github.com/konvajs/konva) which allows for minimal reduction f useless APIs and increased performance reduction in redrawing.
 
 ## Why select fCanvas?
-- `fCanvas` removes dozens or even hundreds of redundant APIs of libraries like [Konva.js](https://konvajs.org/docs/overview.html) and [Fabric.js](http: //fabricjs.com/) reduces packet size to around 80kB and only 60kB when used with [vue](https://vuejs.org)
+- `fCanvas` removes dozens or even hundreds of redundant APIs of libraries like [Konva.js](https://konvajs.org/docs/overview.html) and [Fabric.js](http://fabricjs.com/) reduces packet size to around 80kB and only 60kB when used with [vue](https://vuejs.org)
 - It allows the most advanced tree-shaking support for extremely small package sizes
 - Optimized tactics and strong reactions. **It automatically stops the redraw when nothing has changed this is the latest compared to [Konva.js](https://konvajs.org/docs/overview.html) and [Fabric.js](http://fabricjs.com/)**
 - Reactivity!

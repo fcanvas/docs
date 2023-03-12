@@ -45,7 +45,7 @@
       <h2>WebWorker</h2>
       <p>
         Leverage the power of WebWorker with fcanvas.
-        <a href="/plugins/worker">@fcanvas/worker</a> allows you to display
+        <a href="/guide/plugins/worker">@fcanvas/worker</a> allows you to display
         canvas to user while drawing on WebWorker does not block main thread
       </p>
     </div>
