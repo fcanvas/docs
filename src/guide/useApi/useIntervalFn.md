@@ -1,9 +1,11 @@
 # useIntervalFN
+
 Wrapper for setInterval with controls
 
 ## Usage
+
 ```ts
-import { useIntervalFn } from 'fcanvs'
+import { useIntervalFn } from "fcanvs"
 
 const { pause, resume, isActive } = useIntervalFn(() => {
   /* your function */
@@ -11,6 +13,7 @@ const { pause, resume, isActive } = useIntervalFn(() => {
 ```
 
 ## Type Declarations
+
 ```typescript
 export interface UseIntervalFnOptions {
   /**

@@ -227,7 +227,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: "useIntervalFn", link: "/guide/useApi/useIntervalFn" },
         { text: "useLoop", link: "/guide/useApi/useLoop" },
         { text: "useMousePos", link: "/guide/useApi/useMousePos" },
-        { text: "useMousePressed", link: "/guide/useApi/useMousePressed" },
+        { text: "useMousePressed", link: "/guide/useApi/useMousePressed" }
       ]
     },
     {

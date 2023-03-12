@@ -1,9 +1,11 @@
 # useLoop
+
 Wrapper for `requestAnimationFrame` with controls
 
 ## Usage
+
 ```ts
-import { useLoop } from 'fcanvas'
+import { useLoop } from "fcanvas"
 
 const stop = useLoop((stop) => {
   /* your function */
@@ -11,8 +13,8 @@ const stop = useLoop((stop) => {
 ```
 
 ## Type Declarations
-```typescript
 
+```typescript
 // eslint-disable-next-line functional/no-mixed-type
 interface Looper {
   (): void
